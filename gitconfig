@@ -1,0 +1,40 @@
+[user]
+  name = Daniel Perez Alvarez
+  email = unindented@gmail.com
+
+[alias]
+  a = add
+  ap = add --patch
+  c = commit
+  co = checkout
+  d = diff
+  dw = diff --color-words
+  dc = diff --cached
+  dcw = diff --cached --color-words
+  fix = commit --amend --reuse-message=HEAD
+  fubar = reset --hard
+  l = log --oneline --graph --decorate --max-count=20
+  ll = log --oneline --graph --decorate
+  s = status --branch --short --untracked=no
+  ss = status
+
+[core]
+  attributesfile = ~/.gitattributes
+  excludesfile = ~/.gitignore
+  whitespace = space-before-tab,trailing-space
+
+[push]
+  default = simple
+  followTags = true
+
+[rerere]
+  enabled = true
+  autoupdate = true
+
+[merge]
+  tool = vimdiff
+[mergetool "vimdiff"]
+  prompt = false
+
+[color]
+  ui = auto
